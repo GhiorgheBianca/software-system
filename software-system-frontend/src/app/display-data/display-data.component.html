@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Communicate with the services</h1>
+</div>
+
+<div><button (click)="sendRequest()">Send request to server</button></div>
+<div *ngIf="data">
+  <pre>{{ data | json }}</pre>
+</div>
+
+<div><button class="button-secondary" (click)="getAllData()">Check the data from the database</button></div>
+<div *ngIf="allMessages">
+  <pre>{{ allMessages | json }}</pre>
+</div>
